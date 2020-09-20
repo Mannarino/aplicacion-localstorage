@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#contenedorCentral{
+			background-color: white;
+			height:550px;
+			width: 300px;
+			margin: auto;
+			padding: 10px;
+			margin-top: 30px;
+
+		}
+		label{margin: 5px;}
+		button{
+			margin: 5px;
+		}
+	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Desarrollado por Moises Mannarino</a>
+ 
+
+  
+</nav>
+	<div id="contenedorCentral">
+		<form name="formulario">
+		<label>blanco
+			<input type="radio" name="colores" value="white"> 
+		</label> <br>
+		<label>rojo
+			<input type="radio" name="colores" value="red">
+		</label> <br>
+		<label>azul
+			<input type="radio" name="colores" value="blue" >
+		</label> <br>
+		<label>verde
+			<input type="radio" name="colores" value="green">
+		</label>
+		<br>
+		<label> ingresa tu nombre
+			<input type="text" name="nombre" class="form-control">
+		</label>
+		
+	</form>
+	<button onclick="guardarDatosLocalstorage()" class="btn btn-success">
+	guardar en localStorage</button>
+	<button onclick="borrarDatosLocalstorage()" class="btn btn-danger">
+	borrar en localStorage</button>
+	<br>
+	<br>
+	<div class="card" id="contenedorTextoDatos" ></div>
+	</div>
+	<div class="alert alert-success" role="alert">
+	  En este script trabajo guardando la informacion registrada por el usuario en el localstorage de su navegador, puedes ver todo el codigo de este script en mi github, saludos
+	</div>
+	<script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>
